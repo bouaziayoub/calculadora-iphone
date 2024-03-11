@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <!-- <h1>Calculadora</h1> -->
+
+    <div class="calculadora">
+      <div class="head">
+        <div class="time">
+          <!-- show current time -->
+          <span id="hour"></span>:<span id="minute"></span>
+        </div>
+        <div class="battery-more-info">
+          <div class="sg">
+            <img class="signal" src="" alt="signal-status" width="20" />
+          </div>
+          <div class="wi">
+            <img class="wifi" src="" alt="wifi-status" width="15" />
+          </div>
+          <div class="battery"></div>
+        </div>
+      </div>
+
+      <!-- input display -->
+      <input type="text" id="display" placeholder="0" disabled />
+      <!-- Add these buttons in your HTML where you want them to appear -->
+      <button class="light" onclick="squareNumber()">x²</button>
+      <button class="light" onclick="cubeNumber()">x³</button>
+      <button class="light" onclick="addPi()">π</button>
+      <button class="light" onclick="squareRoot()">√</button>
+      <button class="light" onclick="memoryClear()">MC</button>
+      <button class="light" onclick="memoryRecall()">MR</button>
+      <button class="light" onclick="memoryAdd()">M+</button>
+      <button class="light" onclick="memorySubtract()">M-</button>
+
+      <br />
+      <button class="light" onclick="clearDisplay()">AC</button>
+      <button class="light" onclick="deleteNumber()">+/-</button>
+      <button class="light" onclick="addPercent()">%</button>
+      <button class="orange" onclick="addOperator('/')">÷</button>
+      <br />
+      <button class="dark" onclick="addNumber(7)">7</button>
+      <button class="dark" onclick="addNumber(8)">8</button>
+      <button class="dark" onclick="addNumber(9)">9</button>
+
+      <button class="orange" onclick="addOperator('*')">×</button>
+
+      <br />
+
+      <button class="dark" onclick="addNumber(4)">4</button>
+      <button class="dark" onclick="addNumber(5)">5</button>
+      <button class="dark" onclick="addNumber(6)">6</button>
+
+      <button class="orange" onclick="addOperator('-')">-</button>
+      <br />
+      <button class="dark" onclick="addNumber(1)">1</button>
+      <button class="dark" onclick="addNumber(2)">2</button>
+      <button class="dark" onclick="addNumber(3)">3</button>
+      <button class="orange" onclick="addOperator('+')">+</button>
+      <br />
+      <button class="zero dark" onclick="addNumber(0)">0</button>
+      <button class="dark" onclick="addDot()">,</button>
+      <button class="orange" onclick="calculate()">=</button>
+
+      <div class="white-line"></div>
+
+      <script src="./js/index.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculadora {
+  margin-top: 40px !important;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 306px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.calculadora .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#display {
+  text-align: right;
+  border: none;
+  font-size: 60px !important;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.calculadora .dark {
+  color: white;
+  background-color: #313131;
+}
+
+.calculadora .orange {
+  color: white;
+  background-color: #f39806;
+}
+
+.calculadora .light {
+  background-color: #a0a0a0;
+}
+
+.zero {
+  width: 115px;
+  border-radius: 40px;
+}
+
+#display {
+  width: 206px;
+  height: 50px;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.white-line {
+  padding: 2px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.calculadora .head .battery-more-info {
+  display: flex;
+}
+
+.calculadora .head .battery-more-info .sg,
+.wi {
+  margin-right: 10px;
+}
+
+@media (max-width: 320px) {
+  .calculadora {
+    width: 100%;
+  }
+}
